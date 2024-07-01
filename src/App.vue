@@ -1,10 +1,28 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <div>
+    <bootstrap-test-comp/>
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+    
+  </div>
+  
   <router-view/>
 </template>
+
+<script>
+import BootstrapTestComp from './components/BootstrapTestComp.vue'
+
+
+  export default {
+    name: 'App',
+    components: {
+    BootstrapTestComp
+    }
+  }
+
+</script>
 
 <style>
 #app {
