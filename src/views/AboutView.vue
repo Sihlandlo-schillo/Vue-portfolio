@@ -15,7 +15,7 @@
       </div>
     
       <div class="col-md-6">
-        <img src="../assets/tree_staircases-removebg-preview.png" alt="Our Mission" class="img-fluid">
+        <img src="https://sihlandlo-schillo.github.io/images/images2/tree_staircases-removebg-preview.png" alt="Our Mission" class="img-fluid">
       </div>
     </div>
   </section>

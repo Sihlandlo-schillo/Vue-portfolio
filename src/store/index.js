@@ -41,12 +41,40 @@ export default createStore({
     aboutContent.commit('setAboutMe1',aboutMe[0])
     aboutContent.commit('setAboutMe2',aboutMe[1])
    },
-   async getProjects(aboutContent){
+   async getProjects(proContent){
     let fetchedInfo = await fetch('https://sihlandlo-schillo.github.io/first_api/data/')
     let converted = await fetchedInfo.json()
     let {projects} = converted
-    aboutContent.commit('setProjects',projects)
+    proContent.commit('setProjects',projects)
    },
+   
+   async getEducation(aboutContent){
+    let fetchedInfo = await fetch('https://sihlandlo-schillo.github.io/first_api/data/')
+    let converted = await fetchedInfo.json()
+    let {education} = converted
+    aboutContent.commit('setEducation',education)
+   },
+   
+   async getSkills(aboutContent){
+    let fetchedInfo = await fetch('https://sihlandlo-schillo.github.io/first_api/data/')
+    let converted = await fetchedInfo.json()
+    let {skills} = converted
+    aboutContent.commit('setSkills',skills)
+   },
+   
+   async getTestimonials(aboutContent){
+    let fetchedInfo = await fetch('https://sihlandlo-schillo.github.io/first_api/data/')
+    let converted = await fetchedInfo.json()
+    let {testimonials} = converted
+    aboutContent.commit('setTestimonials',testimonials)
+   },
+   
+   async getContacts(contactsContent){
+    let fetchedInfo = await fetch('https://sihlandlo-schillo.github.io/first_api/data/')
+    let converted = await fetchedInfo.json()
+    let {contacts} = converted
+    contactsContent.commit('setContacts',contacts)
+   }
    
 },
 getters: {
