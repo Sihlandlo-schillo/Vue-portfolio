@@ -4,7 +4,11 @@
     <main>
       <router-view/>
     </main>
+
+
+    <footer>
       <footer-comp/>
+    </footer>
   </div>
 
 </template>
@@ -67,28 +71,25 @@ nav a.router-link-exact-active {
   margin-top: auto;
   width: 100%;
 } */
-/* footer-comp{
-  margin-top: 25px;
-  bottom: 0%;
-  margin-bottom: 0;
-} */
+footer{
+  border-top: #2c3e50;
+}
 @media only screen and (max-width: 900px) {
-  body{
-    /* height: 139vh; */
-  }
+  
   #app{
       margin-bottom: 20%
     }
 }
 @media only screen and (min-width: 901px) {
-  body{
-    /* height: 100vh; */
-  }
-}
-@media only screen and (max-width: 490px) {
-  body{
-    /* height:180vh; */
-  }
   
 }
+@media only screen and (max-width: 490px) {
+  
+  
+}
+/* GREETINGS! Welcome I am Sihlandlo Makhumsha a beginner full-stack Web developer */
+
+
+
+
 </style>
