@@ -34,7 +34,6 @@
 <style scoped>
   h1{
     color: white;
-    background-color: lightco;
   }
   img{
     /* position: absolute; */
