@@ -1,44 +1,68 @@
 <template>
-     <div class="container resume mt-5">
-        <!-- <div class="row">
-            <div class="col order-last">
-                <div class="text-center">
-                    <p class="h3">SKILLS</p>
-                    
+    <div class="container my-5">
+        <section id="mission" class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>EDUCATION</h2>
+                    <div class="card" v-for="ed in education()" :key="ed">
+                        <p><b>{{ ed.Institution }}</b></p>
+                        <p><b>{{ ed.description }}</b></p>
+                        <p><b>{{ ed.status }}</b></p>
+                        <p><b>{{ ed.Duration }}</b></p>
+                    </div>
                 </div>
-                <P class="fw-bold">PROGRAMMING SKILLS LIST</P>
-                <div class="d-flex">
-                    <button type="button" class="list-group-item list-group-item-action"><img src="https://sihlandlo-schillo.github.io/images/images2/BS%20logo.png" class="skills"></button>
-                    <button type="button" class="list-group-item list-group-item-action"><img src="https://sihlandlo-schillo.github.io/images/images2/CSS%20logo.png" class="skills"></button>
-                    <button type="button" class="list-group-item list-group-item-action"><img src="https://sihlandlo-schillo.github.io/images/images2/HTML%20lgo.png" class="skills"></button>
+    
+                <div class="col-md-6">
+                    <h2>SKILLS</h2>
+                    <p class="lead">PROGRAMMING LANGUAGES</p>
+                    <div>
+                        <img src="https://sihlandlo-schillo.github.io/images/images2/vue-logo-black-and-white-removebg-preview.png" alt="" class="img-fluid">
+                        <img src="https://sihlandlo-schillo.github.io/images/images2/JavaScriptLog-removebg-preview.png" alt="" class="img-fluid">
+                        <img src="https://sihlandlo-schillo.github.io/images/images2/BS_logo-removebg-preview.png" alt="" class="img-fluid">
+                        <img src="https://sihlandlo-schillo.github.io/images/images2/CSS_logo-removebg-preview.png" alt="" class="img-fluid">
+                        <img src="https://sihlandlo-schillo.github.io/images/images2/html_logo-removebg-preview.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-                
             </div>
-        
-        <div class="col order-first">
-            <div class="text-center">
-                <p class="h3">EDUCATION</p>
-            </div>
-            <p class="fw-bold">BASIC EDUCATION</p>
-            <li>MAGOPENI J.S.S</li>
-            <li>PAKAMANI S.S.S</li>
-            <p class="fw-bold">HIGHER EDUCATION</p>
-            <li>CPUT -1 YEAR 
-                (Feb 2023- Nov 2023) <br>
-                Left CPUT because I didn't like what I was doing, so I kept searching.
-            </li>
-            <li>LIFE CHOICES CODING ACADEMY <br> 6-Month Course </li>
-        </div>
-        </div> -->
+        </section>
     </div>
+    
 </template>
 <script>
 export default {
-    
+    methods:{
+        education(){
+          return this.$store.state.education
+        }
+    },
+    computed:{
+        getEducation(){
+            return this.$store.dispatch('getEducation')
+        }
+  },
+  mounted(){
+    this.getEducation
+  }
 }
 </script>
 <style scoped>
     img{
-        width: 50px;
+        width: 200px;
+    }
+    h2{
+        align-content: center;
+        text-align: center;
+        margin-left: 20%;
+        height: 60px;
+        width: 300px;
+        color: white;
+        background-color: rgb(85, 65, 65);
+        border-radius: 50%;
+    }
+    .card{
+        padding: 2px;
+        background: transparent;
+        margin-left: 20%;
+        width: 300px;
     }
 </style>
