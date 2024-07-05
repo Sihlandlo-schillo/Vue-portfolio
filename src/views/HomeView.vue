@@ -1,7 +1,7 @@
 <template>
     <div class="container my-5">
   <header class="text-center mb-5 d-flex">
-    <h1 class="greets">Greetings</h1>
+    <h1 class="greets animate__animated animate__bounce">Greetings</h1>
     <p class="lead p-5 ">Welcome!!</p>
   </header>
 
@@ -17,6 +17,17 @@
       </div>
     </div>
   </section>
+  <div>
+    <a href="https://github.com/Sihlandlo-schillo">
+      <img src="https://sihlandlo-schillo.github.io/images/images2/GIThub%20logo.png" alt="" class="icons">
+    </a>
+    <a href="https://www.facebook.com/sihlandlo.makhumsha.3">
+      <img src="https://sihlandlo-schillo.github.io/images/images2/facebook_logo-removebg-preview.png" alt="" class="icons">
+    </a>
+    <a href="https://vercel.com/sihlandlos-projects">
+      <img src="https://sihlandlo-schillo.github.io/images/images2/vercel_logo-removebg-preview.png" alt="" class="icons">
+    </a>
+  </div>
  </div>
 </template>
 
@@ -60,6 +71,12 @@
   }
   span{
     color: white;
+    background-color: gray;
+  }
+  .icons{
+    padding: 4px;
+    height: 50px;
+    width: 50px;
   }
   .belowPic{
     font-size: 190%;
