@@ -17,7 +17,7 @@
                         <router-link class="nav-link" to="/education">RESUME</router-link>
                     </li> 
                     <li class="nav-item">
-                        <router-link class="nav-link active" aria-current="page" to="/projects">PROJECTS</router-link>
+                        <router-link class="nav-link" to="/projects">PROJECTS</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/testimonials">TESTIMONIALS</router-link>

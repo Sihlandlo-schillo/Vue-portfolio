@@ -56,8 +56,7 @@
     font-size: 32px;
     line-height: 39px;
     text-transform: capitalize;
-
-color: #141313;
+    color: #141313;
   }
   span{
     color: white;
