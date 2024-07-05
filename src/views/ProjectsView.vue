@@ -45,13 +45,22 @@ export default {
     section{
 
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
         margin: 5%;
     }
     a{
         padding: 3px;
     }
-    @media screen and (max-width:790px) {
+    .card{
+        background: transparent;
+    }
+    @media screen and (max-width:900px) {
+            section{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            } 
+    }
+    @media screen and (max-width:800px) {
         section{
             display: grid;
             grid-template-columns: repeat(1,1fr);
@@ -61,6 +70,9 @@ export default {
         }
         .card-body a{
             margin: 3px;
+        }
+        .card{
+            background: transparent;
         }
     }
     @media screen and (max-width:490px) {
