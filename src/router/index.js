@@ -22,11 +22,6 @@ const routes = [
     component: ContactView
   },
   {
-    path: '/testimonials',
-    name: 'testimonials',
-    component: TestimonialsView
-  },
-  {
     path: '/projects',
     name: 'projects',
     component: ProjectsView
